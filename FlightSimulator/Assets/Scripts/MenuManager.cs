@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
 
-    public void VehicleSelected(int selection){
+    public void CreatureSelected(int selection){
        //Changes Data of the vehicle selected and changes scene
-        GameManager.Instance.VehSelected = selection;
+        GameManager.Instance.CreSelected = selection;
         SceneManager.LoadScene(1);
     }
     

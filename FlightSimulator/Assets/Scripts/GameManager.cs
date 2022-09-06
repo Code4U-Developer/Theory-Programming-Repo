@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public int VehSelected;
-    private bool simulatorRunning;
+    public int CreSelected;
+    public bool simulatorRunning;
 
     // Start is called before the first frame update
     private void Awake()
@@ -22,10 +22,4 @@ public class GameManager : MonoBehaviour
     Instance.simulatorRunning = false;
     DontDestroyOnLoad(gameObject);
     }
-    /*[System.Serializable]
-    class SaveData
-    {
-    public int VehSelected;
-    public float BestDistance;
-    }*/
 }
