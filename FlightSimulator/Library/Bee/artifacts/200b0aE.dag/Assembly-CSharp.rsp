@@ -351,6 +351,8 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Animal1.cs"
+"Assets/Scripts/Animal2.cs"
+"Assets/Scripts/Animal3.cs"
 "Assets/Scripts/Creature.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/MenuManager.cs"

@@ -10,13 +10,14 @@ public class Creature : MonoBehaviour
 
     protected GameObject MainCamera;
 
-    protected void ForwardsBackwards(float forwardInput){
+    public virtual void ForwardsBackwards(float forwardInput){
+
         forwardInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.forward * speed * forwardInput * Time.deltaTime);
         CameraTracking();
     }
 
-    private void CameraTracking(){
+    protected void CameraTracking(){
         MainCamera.transform.position = transform.position;
         MainCamera.transform.rotation = transform.rotation;
     }
