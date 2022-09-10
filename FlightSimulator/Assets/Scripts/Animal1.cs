@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Animal1 : Creature
 {
-    // Start is called before the first frame upda
+    // INHERITANCE
     
     private float horizontalInput;
     private float forwardInput;

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Animal2 :Creature
 {
-    // Start is called before the first frame upda
+    // INHERITANCE
     
     private float horizontalInput;
     private float forwardInput;
     private float upJump = 8.5f;
+    private float waitBetweenJump = 2;
     private Rigidbody AnRb;
     void Start()
     {
@@ -26,9 +27,14 @@ public class Animal2 :Creature
         ForwardsBackwards(forwardInput);
         horizontalInput = Input.GetAxis("Horizontal");
         TurnRightLeft(horizontalInput);
-
+        if(waitBetweenJump >= 0){
+        waitBetweenJump -= Time.deltaTime;
+        }
         if(Input.GetKeyDown(KeyCode.Space)){
+            if(waitBetweenJump < 0){ 
             Jump();
+            waitBetweenJump = 2;
+            }
         }
     }
 

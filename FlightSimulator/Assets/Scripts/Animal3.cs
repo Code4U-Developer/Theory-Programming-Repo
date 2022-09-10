@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Animal3 : Creature
 {
-    // Start is called before the first frame upda
+    // INHERITANCE
     
     private float horizontalInput;
     private float forwardInput;
     private float upJump = 11.5f;
     private Rigidbody AnRb;
     private float waitBetweenJump = 2;
-    
+
     void Start()
     {
         speed = 15.0f;
@@ -34,6 +34,7 @@ public class Animal3 : Creature
         }
     }
 
+    // POLYMORPHISM
     public override void ForwardsBackwards(float forwardInput){
         if(forwardInput > 0){
         if(waitBetweenJump < 0){ 
