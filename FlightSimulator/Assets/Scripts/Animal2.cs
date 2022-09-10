@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal2 :Creature
+public class Animal2 : Creature
 {
     // INHERITANCE
     
     private float horizontalInput;
     private float forwardInput;
     private float upJump = 8.5f;
-    private float waitBetweenJump = 2;
+    private float waitBetweenJump = 0;
     private Rigidbody AnRb;
     void Start()
     {

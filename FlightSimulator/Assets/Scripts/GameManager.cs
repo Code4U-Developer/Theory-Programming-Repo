@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public int CreSelected;
-    public bool simulatorRunning;
 
     // Start is called before the first frame update
     private void Awake()
@@ -19,7 +18,6 @@ public class GameManager : MonoBehaviour
     }
 
     Instance = this;
-    Instance.simulatorRunning = false;
     DontDestroyOnLoad(gameObject);
     }
 }
