@@ -6,7 +6,7 @@ public class Creature : MonoBehaviour
 {
     // INHERITANCE
     protected float speed;
-    protected float turnSpeed;
+    protected float turnSpeed; 
 
     protected GameObject MainCamera;
 
